@@ -7,7 +7,7 @@ const ejs = require("ejs");
 app.set("view engine","ejs");
 
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static("static"));
+app.use(express.static("pehchaan_static"));
 
 
 
