@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- font link -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Merriweather:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
@@ -13,16 +14,167 @@
 
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/footer.css">
     <!-- AOS css Library -->
     <link rel="stylesheet" href="css/aos.css">
 
     <title>Pehchaan</title>
-    <div class="section1">
+  </head>
+  <body>
+    
+     <!-- section 1  -->
 
-        <%- include("partials/navBar") -%>
+   <div class="section1">
+
+    <%- include("partials/navBar") -%>
+
+    <header>
+      <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="backk3.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+          <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+              <h1 class="display-3" style="font-family: 'Aladin', cursive;">Pehchaan</h1>
+              <!-- <p class="lead mb-0"> “Women are leaders everywhere you look—from the CEO who runs a Fortune 500 company to the housewife who raises her children and heads her household. Our country was built by strong women, and we will 
+                continue to break down walls and defy stereotypes.”<br> –Nancy Pelosi</p> -->
+            </div>
+          </div>
         </div>
-</head>
-<body>
-   
-</body>
+       </header>
+
+</div>
+
+
+   <!-- section 2 - Ladies  -->
+
+    <div class="section2">
+
+    <h1 class="head_sect" >Change Makers</h1>
+
+    <div class="sub_sect2">
+
+      <% for(var i=0; i<3;i++){ %>
+        <div class="card mb-3 div_sect2" style="max-width: 90%;">
+          <div class="row g-0">
+            <div class="col-lg-4">
+              <img class="img_sect2" src="" alt="...">
+            </div>
+            <div class="col-lg-8">
+              <div class="card-body">
+                <h3 class="card-title" style="font-family: 'Raleway', sans-serif;"></h3>
+                  <p class="card-text"></p>
+                  <p class="card-text"></p>
+                  <a href="">More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% } %>
+    </div>
+
+    </div>
+
+   <!-- section 3 - carousel(products) -->
+   <div class="section3">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner sect3-item">
+        <div class="carousel-item active">
+          <img
+            src="images/carousel-21.jpg"
+            class="d-block w-100 sect3-img" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+        <div class="carousel-item sect3-item">
+          <img
+            src="images/carousel-111.jpg"
+            class="d-block w-100 sect3-img" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+        <div class="carousel-item sect3-item">
+          <img
+            src="images/carousel-3.jpg"
+            class="d-block w-100 sect3-img" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+<!-- section 4: stats -->
+
+<div class="section4">
+  <h1 class="head_sect text-white">Stats</h1>
+  <div class="row">
+    <div class="col-lg-4 col-md-6 sect4-col" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
+      <img src="images/stat1.png" alt="" class="sect4-img">
+    </div>
+    <div class="col-lg-4 col-md-6 sect4-col" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
+      <img src="images/navbar" alt="" class="sect4-img">
+    </div>
+    <div class="col-lg-4 col-md-6 sect4-col" data-aos="fade-left"
+    data-aos-anchor="#example-anchor"
+    data-aos-offset="500"
+    data-aos-duration="500">
+      <img src="images/stat3.jpg" alt="" class="sect4-img">
+    </div>
+    <div class="col-lg-4 col-md-6 sect4-col" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
+      <img src="images/stat4.jpg" alt="" class="sect4-img">
+    </div>
+    <div class="col-lg-4 col-md-6 sect4-col" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
+      <img src="images/stat5.png" alt="" class="sect4-img">
+    </div>
+    <div class="col-lg-4 col-md-6 sect4-col" data-aos="fade-left"
+    data-aos-anchor="#example-anchor"
+    data-aos-offset="500"
+    data-aos-duration="500">
+      <img src="images/stat6.png" alt="" class="sect4-img">
+    </div>
+  </div>
+</div>
+  
+   <%- include("partials/footer") -%>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+
+    <!-- AOS js Library -->
+    <script src="js/aos.js"></script>
+
+
+    <script src="js/home.js"></script>
+    
+
+  </body>
 </html>
