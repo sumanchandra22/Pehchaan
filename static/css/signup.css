@@ -1,7 +1,6 @@
-
 body{
     /* background: rgb(204, 204, 245); */
-    background-image: url(../images/asthe.jfif);
+    background-image: url(../images/asthe.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -67,5 +66,3 @@ body{
 .right label{
     font-size: 1.2rem;
 }
-
-

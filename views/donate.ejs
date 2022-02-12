@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChangeMaker</title>
+
+     <!-- font link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Merriweather:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+    
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/donate.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.6.95/css/materialdesignicons.css">
+
+</head>
+<body>
+  <h1 class="font-style" >Fill this to be a part of <strong>Pehchaan</strong></h1>
+ 
+      <div>
+    <div class="row pt-5 pl-5 pr-5 pb-5 box">  
+    <form class="col-6" action="/bepart" method="POST">
+        <div class="row mb-2">
+            <div class="col">
+              <input type="text" class="form-control" id="firstname" placeholder="First name">
+            </div>
+            <div class="col">               
+              <input type="text" class="form-control" id="lastname" placeholder="Last name">
+            </div>
+          </div>
+        <div class="form-group">
+        
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="mobile" placeholder="Mobile Number">
+          </div>
+        <div class="form-group">
+          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Describe yourself to be a change maker in atleast 100 words." rows="3"></textarea>
+        </div>
+       
+        <div class="form-group">
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+          
+            <button type="submit" class="but ">Join Us</button>
+      </form>
+    </div>
+</div>
+ 
+    <%- include("partials/footer") -%>
+</div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>

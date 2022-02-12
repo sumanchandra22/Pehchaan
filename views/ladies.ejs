@@ -15,33 +15,37 @@
 
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/ladies.css">
+    
 
     <title>Ladies</title>
 </head>
 <body>
   
+  <div>
+
     <%- include("partials/navBar") -%>
+
 
     <div class="heading-top">
       <h1 class="space1"></h1>
         <h1 style="font-family: 'Akaya Telivigala', sans-serif;">Some of our Change Makers</h1>
        <h1 class="space"></h1>
        <form action="/helpus">
-        <button type="submit" class="btn-primary but buy-btn" style="font-family: 'Akaya Telivigala', sans-serif;">Be a Change Maker</button>
+        <button type="submit" class="btn-primary but buy-btn" style="font-family: 'Akaya Telivigala', sans-serif;">Be a part of PEHCHAAN</button>
     </form>
-        <!-- <a class="nav-link active but " href="/payment"><strong>Be A Change Maker</strong></a> -->
     </div>
     
-
-    <div class="sub_sect2">
-
+     
+   
+      <div class="row">
       <% ladyItems.forEach(function(lady){ %>
-        <div id = parent class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded ladiesSect" style="max-width: 90%;">
-          <div class="row g-0">
-            <div class="col-lg-3">
-              <img class="img_sect2" src="<%= lady.image %>" alt="...">
+        
+        <div class="card col-lg-5 mb-5 shadow ladiesSect">
+          <div class="row">
+            <div>
+              <img class="img_sect2 mt-5" src="<%= lady.image %>" alt="...">
             </div>
-            <div class="col-lg-9">
+            <div class="row">
               <div class="card-body">
                 <h2 class="card-title" style="font-family: 'Akaya Telivigala', sans-serif;"><%= lady.name %></h2>
                 <p class="card-text " style="font-family: 'Alice', sans-serif;" ><%= lady.heading %></p>
@@ -51,20 +55,22 @@
             </div>
           </div>
         </div>
-      <% }) %>
-    </div>
-    
        
+      <% }) %>
+   
+    
+      </div> 
        <%- include("partials/footer") -%>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+      </div>
+   
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     -->
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+     
 
 </body>
 </html>

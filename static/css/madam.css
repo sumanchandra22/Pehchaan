@@ -1,0 +1,40 @@
+body{
+    background-color: aliceblue;
+}
+.name{
+    height: 150px;
+    padding-top: 5rem;
+    padding-left: 4rem;
+}
+
+.para1{
+    text-align: left;
+    padding-top: 2rem;
+    padding-left: 4rem;
+}
+
+.ladyimg{
+    padding-left: 4rem;
+}
+
+.imgLady1{
+    height: 500px;
+}
+
+.paras{
+    padding-top: 2rem;
+}
+
+hr{
+    margin: 0 auto;
+}
+
+.myWork{
+ padding: 2rem;
+}
+
+.myWork img{
+    width: 11rem;
+    height: 8rem;
+    margin: .5rem;
+}

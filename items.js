@@ -3,71 +3,71 @@ exports.getProducts = function() {
     const items = [ 
         {
             item_id:1,
-            image : "p_img/p6.png",
-            name :  "Floral Pillow Covers",
-            lady : "Sandhya Jain",
-            Price : "₹500/unit",
+            image : "p_img/img3.jfif",
+            name :  "Porcelain Mugs",
+            lady : "Dariya Bhat",
+            Price : "₹50/unit",
             Rating : 5
         },
 
         {
             item_id:2,
-            image : "p_img/p5.png",
-            name :  "Doll Set",
-            lady : "Nidhi Garg",
-            Price : "₹700/unit",
-            Rating : 4
+            image : "p_img/img4.jfif",
+            name :  "Laltern Hangings",
+            lady : "Medha Devi",
+            Price : "₹170/unit",
+            Rating : 5
         },
 
         {
             item_id:3,
-            image : "p_img/p16.png",
-            name :  "Dream Catcher",
-            lady : "Ruchi Aggarwal",
+            image : "p_img/img6.jfif",
+            name :  "Carry Bags",
+            lady : "Tara Aggarwal",
             Price : "₹400/unit",
             Rating : 5
         },
 
         {
             item_id:4,
-            image : "p_img/p36.png",
-            name :  "Candel Stand",
-            lady : "Bindu Anand",
-            Price : "₹300/unit",
+            image : "p_img/img7.jfif",
+            name :  "Woolen Sweater",
+            lady : "Medha Devi",
+            Price : "₹600/unit",
             Rating : 4
         },
 
         {
             item_id:5,
-            image :"p_img/p1.jpg",
-            name :  "Wooden Elephant",
-            lady : "Seema Kumari",
-            Price : "₹200/unit",
-            Rating : 5
+            image :"p_img/img8.jfif",
+            name :  "Beads Bracelet",
+            lady : "Tara Agrawal",
+            Price : "₹70/unit",
+            Rating : 3
         },
         {
             item_id:6,
-            image : "p_img/p2.jpeg",
-            name :  "Peacock Wodden Box",
+            image : "p_img/img9.jfif",
+            name :  "Flower Vase",
             lady : "Sona Rani",
-            Price : "₹500/unit",
-            Rating : 3
+            Price : "₹380/unit",
+            Rating : 4
         },
         {
             item_id:7,
-            image : "p_img/p3.jpg",
-            name :  "Bamboo Basket",
-            lady : "Sunita Kumari",
+            image : "p_img/img10.jfif",
+            name :  "Procelain Basket",
+            lady : "Dariya Bhat",
             Price : "₹300/unit",
-            Rating : 3
+            Rating : 5
         },
         {
             item_id:8,
-            image : "p_img/p4.jpg",
-            name :  "Wooden Showpiece",
-            lady : "Sandhya Jain",
-            Price : "₹3000/unit",
-            Rating : 5
+            image : "p_img/img11",
+            name :  "Procelain Stans",
+            lady : "Dariya Bhat",
+            Price : "₹360/unit",
+            Rating : 3
         },
         {
             item_id:9,

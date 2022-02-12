@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Merriweather:wght@500&family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/payment.css">
+
+</head>
+
+<body>
+    
+    <%- include("partials/navBar") -%>
+   
+    <h1 class="main_heading">Complete Transaction</h1>
+
+    <div class="row">
+
+        <div class="col-lg-7 col-md-6">
+
+            <div class="upperhalf">
+                <h2 class="itemd" style="font-family: 'Aladin', cursive;  ">Name Of Item : <%= itemData%>
+                </h2>
+                <h3 class="itemd" style="font-family: 'Aladin', cursive;  ">Name Of Seller : <%= itemData1 %>
+                </h3>
+            </div>
+
+            <div class="lowerhalf">
+
+                <div class="mth">
+                    <h3 class="head">Select A Method</h3>
+                    <form action="/payment" class="selection">
+                        <p>Please select your method of payment:</p>
+                        <div class="rad">
+                            <input type="radio" name="methodSelector" id="delivery">
+                            <label for="ondelivery">Pay On Delivery</label>
+                        </div>
+
+                        <div class="rad">
+
+                            <input type="radio" name="methodSelector" id="card">
+                            <label for="onCard"> Pay Using Card</label>
+                        </div>
+
+                    </form>
+
+                    <!-- <button type="radio" class="button" id="delivery">Pay On Delivery</button>
+                <button class="button" id="card">Pay Using Card</button> -->
+                </div>
+
+                <!-- pay on delivery -->
+
+
+                <div class="payOnDelivery">
+                    <h2 class="payDelivey">Shipping Address</h2>
+                    <form action="/thanku">
+                        <div class="form-del">
+                            <label for="country" class="label-form">Country: </label>
+                        <input type="text" id="country" class="form-input" name="country" placeholder="India">
+                        <label for="fanme" class="label-form">First Name: </label>
+                        <input type="text" id="fname" class="form-input" name="fname" placeholder="Benedict">
+                        <label for="lanme" class="label-form">Last Name: </label>
+                        <input type="text" id="lname" class="form-input" name="lname" placeholder="Cumberbatch">
+                        <label for="city" class="label-form">City: </label>
+                        <input type="text" id="city" class="form-input" name="city" placeholder="New Delhi">
+                        <label for="state" class="label-form">State: </label>
+                        <input type="text" id="state" class="form-input" name="state" placeholder="Delhi">
+                        <label for="code" class="label-form">Zip/Postal Code: </label>
+                        <input type="text" id="code" class="form-input" name="code" placeholder="110035">
+                        <label for="num" class="label-form">Phone Number: </label>
+                        <input type="number" id="num" class="form-input" name="num" placeholder="1198011035">
+                        <label for="mail" class="label-form">Email: </label>
+                        <input type="email" id="mail" class="form-input" name="mail"
+                            placeholder="protsahaana123@gmail.com">
+                        </div>
+                        
+                        <button class="button" type="submit">Place Order</button>
+                    </form>
+                </div>
+
+                <!-- end of pay on delivery -->
+
+                <!-- pay using card -->
+
+                <div class="payUsingCard" id="payUsingCard">
+                    <div class="panel-heading">
+                        Enter Card details
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="col-md-12"><strong>Card Type:</strong></div>
+                            <div class="col-md-12">
+                                <select id="CreditCardType" name="CreditCardType" class="form-control">
+                                    <option value="5">Visa</option>
+                                    <option value="6">MasterCard</option>
+                                    <option value="7">American Express</option>
+                                    <option value="8">Discover</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12"><strong>Credit Card Number:</strong></div>
+                            <div class="col-md-12"><input type="text" class="form-control" name="car_number" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12"><strong>Card CVV:</strong></div>
+                            <div class="col-md-12"><input type="text" class="form-control" name="car_code" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <strong>Expiration Date</strong>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control" name="">
+                                    <option value="">Month</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control" name="">
+                                    <option value="">Year</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <span>Pay secure using your credit card.</span>
+                            </div>
+                            <div class="col-md-12">
+                                <ul class="cards">
+                                    <li class="visa hand">Visa</li>
+                                    <li class="mastercard hand">MasterCard</li>
+                                    <li class="amex hand">Amex</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <button type="submit" class="button-below">Place Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- end of pay using card -->
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="col-lg-5 col-md-6">
+
+            <div class="box">
+
+                <h3 class="inner_head">Summary</h3>
+
+                <img class="productImage" src="<%= itemData3%>" alt="image">
+
+                <div class="reviewOrder">
+                    <div class="item-order">
+                        <p>Price : <%= itemData2%>
+                        </p>
+                    </div>
+                    <div class="item-order">
+                        <p> Delivery Charge : ₹ 0 (Free Delivery)</p>
+                    </div>
+                    <div class="item-order">
+                        <p> Total Cost : <%= itemData2%>
+                            
+                        </p>
+                    </div>
+                    <p class="terms">
+                        Pehchaan is required by law to collect applicable transaction taxes for purchases made in
+                        certain tax jurisdictions.
+                        By completing your purchase you agree to these Terms of Service.
+                    </p>
+                </div>
+            </div>
+
+                
+        <!-- <img src="images/picc.jpg" alt="Computer man" style="width:400px;height:600px;"> -->
+        <div>
+                <video playsinline="playsinline" style="width:500px;height:200px;" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="Video_PROS.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div>
+                    <video playsinline="playsinline" style="width:500px;height:200px;" autoplay="autoplay" muted="muted" loop="loop">
+                        <source src="158269683.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div>
+                        <video playsinline="playsinline" style="width:500px;height:200px;" autoplay="autoplay" muted="muted" loop="loop">
+                            <source src="knit.mp4" type="video/mp4">
+                          </video>
+                        </div>
+                        <div>
+                            <video playsinline="playsinline" style="width:500px;height:200px;" autoplay="autoplay" muted="muted" loop="loop">
+                                <source src="pot.mp4" type="video/mp4">
+                              </video>
+                            </div>
+                            <div>
+                                <video playsinline="playsinline" style="width:500px;height:200px;" autoplay="autoplay" muted="muted" loop="loop">
+                                    <source src="158269683.mp4" type="video/mp4">
+                                  </video>
+                                </div>
+                                <div>
+                                    <video playsinline="playsinline" style="width:500px;height:200px;" autoplay="autoplay" muted="muted" loop="loop">
+                                        <source src="knit.mp4" type="video/mp4">
+                                      </video>
+                                    </div>
+                <!-- <div c
+                    lass="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="images/picc.jpg" style="width:100%">
+                      <div class="text">Caption Text</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="images/picc2.jpg" style="width:100%">
+                      <div class="text">Caption Two</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="images/picc3.jpg" style="width:100%">
+                      <div class="text">Caption Three</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="images/picc4.jpg" style="width:100%">
+                        <div class="text">Caption Three</div>
+                      </div>
+                    
+                    </div> -->
+
+            
+
+        </div>
+        
+
+
+    </div>
+    
+    <%- include("partials/footer") -%>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+
+
+    <script src="js/payment.js" type="module"></script>
+
+</body>
+
+</html>

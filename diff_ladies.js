@@ -20,6 +20,41 @@ exports.getLady = function() {
         },
         {
             lady_id:2,
+            image : "images/ladynew1.jpg",
+            name : "Medha Devi", 
+            heading:"I am a Handicraft Worker From Jabalpur, India and my speciality is Wooden Craft and I make bags , stands, wooden hangers and variety of other products.",
+            para1: "I am 57 years old and a part of Pehchaan since 6 years.My hand wooden crafts are most unique products and is among top rated products .Here we all ladies sit together and makes several products for our customers. There are a lot of activities arranged here for ladies of all age groups.  ",
+            para2:"Support of our customers have encouraged us to work on this mission to make Pehchaan an identity for all those ladies who have talents but havent got the platform to showcase it.It will be our heartiest request to share this website so that we can reach all women over india .",
+            phone: "9993454939",
+            products:{
+                img1: "p_img/wooden1.jfif",
+                img2: "p_img/wooden2.jfif",
+                img3: "p_img/wooden3.jfif",
+                img4: "p_img/wooden4.jfif",
+                img5: "p_img/wooden5.jfif",
+                img6: "p_img/wooden6.jfif"
+            }
+        },
+
+        {
+            lady_id:2,
+            image : "images/dariya",
+            name : "Dariya Bhat", 
+            heading:"I am a Handicraft Worker From Jaipur, Rajashthan and my speciality is Porcelain Art and Craft and I make flower vase , baskets, holders and variety of other products and customise it to make better.",
+            para1: "I am 49 years old and a part of Pehchaan since 3 years.My father was a porcelain artist hence i have recived this artistry in hereditry. My products are one of the most sold products on our website.People call me clay lady here and love my products.I try to bring new cretivity in my product and   ",
+           para2:"Support of our customers have encouraged us to work on this mission to make Pehchaan an identity for all those ladies who have talents but havent got the platform to showcase it.It will be our heartiest request to share this website so that we can reach all women over india .",
+            phone: "9998374939",
+            products:{
+                img1: "p_img/img4.jfif",
+                img2: "p_img/dariya1.jfif",
+                img3: "p_img/dariya2.jpg",
+                img4: "p_img/img7.jfif",
+                img5: "p_img/dariya3.jfif",
+                img6: "p_img/img9.jfif"
+            }
+        },
+        {
+            lady_id:4,
             image : "images/lady2.png",
             name : "Apurva Mittal", 
             heading:"I am a Handicraft Worker From Nagpur, India and my speciality is Woollen Craft and I make woollen sweaters , mats, child clothing and variety of other products.",
@@ -35,7 +70,7 @@ exports.getLady = function() {
                 img6: "p_img/p56.jpeg"
             }
         },
-
+    
         {
             lady_id:2,
             image : "images/lady7.png",
