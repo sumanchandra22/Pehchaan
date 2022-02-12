@@ -1,39 +1,39 @@
 <nav class="navbar fixed-top navbar-expand-md navcol" id="navigation">
-    <div class="container-fluid">
-      <div>
-        <a class="navbar-brand" href="/">
-          <img src="images/logo_NGO7.png" alt="logo" width="50" height="34">
-        </a>
-        <a class="navbar-brand mr-auto" href="/">Pehchaan</a>
-      </div>
+  <div class="container-fluid">
+    <div>
+      <a class="navbar-brand" href="/">
+        <img src="images/logo_NGO7.png" alt="logo" width="50" height="34">
+      </a>
+      <a class="navbar-brand mr-auto" href="/">Pehchaan</a>
+    </div>
 
-      <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav" href="/">Home</a>
-        </li>
+    <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-            <a class="nav" href="/product">Buy Now</a>
-        </li>
+          <a class="nav" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav" href="/product">Buy Now</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav" href="/ladies">Agents Of Change</a>
+      </li>
         <li class="nav-item">
-            <a class="nav" href="/ladies">Agents Of Change</a>
+          <a class="nav" href="#section5">About Us</a>
         </li>
-          <li class="nav-item">
-            <a class="nav" href="#section5">About Us</a>
-          </li>
-        </ul>
-        <div class="ml-auto">
-          <a class="btn btn-outline-success " href="" id="donate">Donate Now</a>
-          <a class="btn btn-outline-success " href="" id="login">Login</a>
-          <a class="btn btn-outline-success " href="" id="register">Register</a>
-          <a href="/profile" > <img class=" icon " src=""alt="icon"></a>
-          <a class="btn btn-outline-success " href="" id="logout">Logout</a>
-        </div>
+      </ul>
+      <div class="ml-auto">
+        <a class="btn btn-outline-success <%=login%>" href="/donatesu" id="donate">Donate Now</a>
+        <a class="btn btn-outline-success <%=login%>" href="/login" id="login">Login</a>
+        <a class="btn btn-outline-success <%=login%>" href="/register" id="register">Register</a>
+        <a href="/profile" > <img class=" icon <%= logout %>" src="images/icon.png"alt="icon"></a>
+        <a class="btn btn-outline-success <%=logout%>" href="/logout" id="logout">Logout</a>
       </div>
     </div>
+  </div>
 </nav>
