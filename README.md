@@ -23,20 +23,20 @@ A Website for providing identity to all those unprivileged women who have the ta
 **Dependencies used in the project -**
 
    "dependencies": {
-    "body-parser": "^1.19.0",
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "express-session": "^1.17.2",
-    "mongoose": "^5.12.12",
-    "passport": "^0.4.1",
-    "passport-local": "^1.0.0",
-    "passport-local-mongoose": "^6.1.0"
+   - [x] "body-parser": "^1.19.0",
+   - [x] "ejs": "^3.1.6",
+   - [x]  "express": "^4.17.1",
+   - [x] "express-session": "^1.17.2",
+   - [x] "mongoose": "^5.12.12",
+   - [x] "passport": "^0.4.1",
+   - [x] "passport-local": "^1.0.0",
+   - [x]"passport-local-mongoose": "^6.1.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    - [x] "nodemon": "^2.0.15"
   }
   
- **Tech Stacks used - **
+ ***Tech Stacks used -***
  
    - [x] Node.js
    - [x] EJS
