@@ -6,13 +6,13 @@ html {
 }
 
 body {
-  font-family: "Proxima Nova Soft Semibold", "Proxima Nova",
-    "Helvetica Neue", Arial;
+  font-family: "Proxima Nova Soft Semibold", "Proxima Nova", "Helvetica Neue",
+    Arial;
 }
 
 body,
 .container {
-    min-height: 100%;
+  min-height: 100%;
   max-height: 100%;
 }
 
@@ -20,7 +20,8 @@ body,
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(http://manavkartavya.org/wp-content/uploads/2018/08/women-empowerment-inner.jpg) no-repeat,
+  background: url(http://manavkartavya.org/wp-content/uploads/2018/08/women-empowerment-inner.jpg)
+      no-repeat,
     #262729;
   background-size: cover;
   min-height: 100%;
@@ -35,12 +36,11 @@ body,
 }
 
 .box-top {
-    height: 50%;
+  height: 50%;
   padding: 30px 30px 20px;
- 
+
   border-radius: 50%;
   background: white;
-
 }
 
 .box-icon {
@@ -57,7 +57,7 @@ h1 {
   font-size: 50px;
   margin: 0 auto;
   text-align: center;
-  font-family: 'Sigmar One', cursive;
+  font-family: "Sigmar One", cursive;
   cursor: pointer;
   color: #fff;
 }
@@ -84,37 +84,37 @@ h1 {
 .box-btn {
   margin: 10px auto;
 }
- .wh{
-    cursor: pointer;
-    transition: 0.5s;
-    padding: 14px 20px;
-    border: 0;
-    border-radius: 1rem;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    background-color: #fff;
-    border: 2px solid #2a1cf0;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    width: 15rem;
-    margin-left: 39%;
- }
+.wh {
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 14px 20px;
+  border: 0;
+  border-radius: 1rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  background-color: #fff;
+  border: 2px solid #2a1cf0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 15rem;
+  margin-left: 39%;
+}
 
- .wh:hover{
-    cursor: pointer;
-    transition: 0.5s;
-    padding: 14px 20px;
-    border: 0;
-    border-radius: 1rem;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    background-color: #9993f5;
-    border: 2px solid #2a1cf0;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    width: 15rem;
-    margin-left: 38%;
- }
+.wh:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 14px 20px;
+  border: 0;
+  border-radius: 1rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  background-color: #9993f5;
+  border: 2px solid #2a1cf0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 15rem;
+  margin-left: 38%;
+}
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -170,7 +170,6 @@ h1 {
     margin: 0;
     max-width: 190px;
   }
-
 }
 
 @media screen and (min-width: 601px) {
@@ -184,4 +183,3 @@ h1 {
     font-size: 4.5vh;
   }
 }
- 

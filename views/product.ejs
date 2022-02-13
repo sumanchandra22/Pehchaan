@@ -7,7 +7,9 @@
 
     <!-- font link -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Merriweather:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aladin&family=Merriweather:wght@300&family=Raleway:wght@500&display=swap"
+        rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -26,7 +28,7 @@
 
     <%- include("partials/navBar") -%>
 
-       
+
 
         <div class="productBox">
             <div class="productHead">
@@ -34,94 +36,96 @@
             </div>
             <div class="row items">
                 <% itemData.forEach(function(item){ %>
-                    
+
                     <div class="col-lg-4 col-md-4 col-sm-6  mb-3 itemOuterBox">
                         <form action="/payment" method="POST">
                             <div>
 
-                          
-                            <input type="hidden"  name="productId" value= "<%= item.name %>" >
-                            <input type="hidden"  name="lady" value= "<%= item.lady %>" >
-                            <input type="hidden"  name="image1" value= "<%= item.image %>" >
-                            <input type="hidden"  name="price" value= "<%= item.Price %>" >
-                        <div class="itemBox" id="<%= item.id %>">
-                            <img class="card-img-top prodimg" src="<%= item.image %>" alt="" class="img-fluid itemImg">
-                            <div class="itemName">
-                                <h3 style="font-family: 'Aladin', cursive;">
-                                    <%= item.name %>
-                                </h3>
-                            </div>
 
-                            <h6 style="font-family: 'Merriweather', serif;">
-                                <%= item.lady %>
-                            </h6>
-                            <h6 style="font-family: 'Raleway', sans-serif;">MRP: <%= item.Price%>
-                            </h6>
-                            <div class="review" id="review<%= item.item_id %>" data-toggle="modal"
-                                data-target="#myModal">
-                                <% for(var i=1;i<=5;i++){ %>
-                                    <%    if(i <= item.Rating){ %>
-                                            <span class="clr fa fa-star"></span>
-                                     <%   }else{ %>
-                                            <span class=" clr fa fa-star-o"></span>
-                                      <%  } %>
-                                 <%   } %>
-                                 <p>Add Review</p> 
-                            </div>
-                            <!-- The Modal -->
-                            <div class="modal fade" id="myModal">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
+                                <input type="hidden" name="productId" value="<%= item.name %>">
+                                <input type="hidden" name="lady" value="<%= item.lady %>">
+                                <input type="hidden" name="image1" value="<%= item.image %>">
+                                <input type="hidden" name="price" value="<%= item.Price %>">
+                                <div class="itemBox" id="<%= item.id %>">
+                                    <img class="card-img-top prodimg" src="<%= item.image %>" alt=""
+                                        class="img-fluid itemImg">
+                                    <div class="itemName">
+                                        <h3 style="font-family: 'Aladin', cursive;">
+                                            <%= item.name %>
+                                        </h3>
+                                    </div>
 
-                                        <!-- Modal Header -->
-                                        <div class="modal-header">
-                                     <h4 class="modal-title">Product Review </h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
+                                    <h6 style="font-family: 'Merriweather', serif;">
+                                        <%= item.lady %>
+                                    </h6>
+                                    <h6 style="font-family: 'Raleway', sans-serif;">MRP: <%= item.Price%>
+                                    </h6>
+                                    <div class="review" id="review<%= item.item_id %>" data-toggle="modal"
+                                        data-target="#myModal">
+                                        <% for(var i=1;i<=5;i++){ %>
+                                            <% if(i <=item.Rating){ %>
+                                                <span class="clr fa fa-star"></span>
+                                                <% }else{ %>
+                                                    <span class=" clr fa fa-star-o"></span>
+                                                    <% } %>
+                                                        <% } %>
+                                                            <p>Add Review</p>
+                                    </div>
+                                    <!-- The Modal -->
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
 
-                                        <!-- Modal body -->
-                                        <div class="modal-body">
-                                            <div class="container d-flex justify-content-center mt-200">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="stars">
-                                                            <form action="/product" method="POST">
-                                                                <p class="star-para">Give your review</p>
-                                                                <input class="star star-5" id="star-5" type="radio"
-                                                                    name="star" value="5" />
-                                                                <label class="star star-5" for="star-5"></label>
-                                                                <input class="star star-4" id="star-4" type="radio"
-                                                                    name="star" value="4" />
-                                                                <label class="star star-4" for="star-4"></label>
-                                                                <input class="star star-3" id="star-3" type="radio"
-                                                                    name="star" value="3" />
-                                                                <label class="star star-3" for="star-3"></label>
-                                                                <input class="star star-2" id="star-2" type="radio"
-                                                                    name="star" value="2" />
-                                                                <label class="star star-2" for="star-2"></label>
-                                                                <input class="star star-1" id="star-1" type="radio"
-                                                                    name="star" value="1" />
-                                                                <label class="star star-1" for="star-1"></label>
-                                                                <button type="submit" class="btn btn-danger"
-                                                                    data-dismiss="modal">Add Review</button>
-                                                            </form>
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Product Review </h4>
+                                                    <button type="button" class="close"
+                                                        data-dismiss="modal">&times;</button>
+                                                </div>
+
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <div class="container d-flex justify-content-center mt-200">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="stars">
+                                                                    <form action="/product" method="POST">
+                                                                        <p class="star-para">Give your review</p>
+                                                                        <input class="star star-5" id="star-5"
+                                                                            type="radio" name="star" value="5" />
+                                                                        <label class="star star-5" for="star-5"></label>
+                                                                        <input class="star star-4" id="star-4"
+                                                                            type="radio" name="star" value="4" />
+                                                                        <label class="star star-4" for="star-4"></label>
+                                                                        <input class="star star-3" id="star-3"
+                                                                            type="radio" name="star" value="3" />
+                                                                        <label class="star star-3" for="star-3"></label>
+                                                                        <input class="star star-2" id="star-2"
+                                                                            type="radio" name="star" value="2" />
+                                                                        <label class="star star-2" for="star-2"></label>
+                                                                        <input class="star star-1" id="star-1"
+                                                                            type="radio" name="star" value="1" />
+                                                                        <label class="star star-1" for="star-1"></label>
+                                                                        <button type="submit" class="btn btn-danger"
+                                                                            data-dismiss="modal">Add Review</button>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
 
-                               
+
+                                    </div>
+
+
+                                    <!-- <a class="nav-link active" href="/payment">Buy Now</a> -->
+                                </div>
+                                <button type="submit" class="butn">Buy Now</button>
                             </div>
-                            
-                
-                          <!-- <a class="nav-link active" href="/payment">Buy Now</a> -->
-                        </div>
-                        <button type="submit" class="butn">Buy Now</button>
-                    </div>
-                       </form>
+                        </form>
                     </div>
                     <% }) %>
             </div>
