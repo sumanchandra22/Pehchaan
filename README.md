@@ -34,8 +34,7 @@ A Website for providing identity to all those unprivileged women who have the ta
   },
   
  **"devDependencies": {**
-  
-    - [x] "nodemon": "^2.0.15"
+    - "nodemon": "^2.0.15"
   }
   
  ***Tech Stacks used -***
