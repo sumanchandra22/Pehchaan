@@ -1,7 +1,6 @@
 body {
-    background-color: #f9f9fa;
-    background: -webkit-gradient(linear, left top, right top, from(#f29263), to(#ee5a6f));
-    background: linear-gradient(to right,#f29263, #ee5a6f )
+    background-color: #726cf8;
+    background-image: linear-gradient(315deg, #726cf8 0%, #e975a8 74%);
 }
 .payUsingCard{
     display: none;
@@ -15,7 +14,12 @@ form{
 
 .main_heading{
    text-align: center;
-    margin: 2rem;
+   box-shadow: 2px gray;
+border-style:outset;
+color: rgb(10, 10, 10);
+font-weight: bold;
+box-shadow: 7px 7px 5px grey;
+    margin: 1rem;
     margin-top: 5rem;
     font-size: 3rem;
     font-weight: bolder;
@@ -41,7 +45,9 @@ form{
     margin-right: 5rem;
     display: flex;
     flex-direction: column;
-    border: 1px solid #ff2e63;
+    background-color: #c144e7;
+background-image: linear-gradient(315deg, #aa2ec0 0%, #e975a8 74%);
+    border: 1px solid #530643;
     border-radius: 10px;
 }
 
@@ -84,7 +90,9 @@ form{
 
 .box{
     margin: 2rem;
-    border: 2px solid #ff2e63;
+    border: 2px solid #7c0262;
+    background-color: #c144e7;
+    background-image: linear-gradient(315deg, #aa2ec0 0%, #e975a8 74%);
     text-align: center;
 }
 .inner_head{
@@ -115,7 +123,8 @@ form{
     flex-direction: column;
     border: 1px solid #fa6f92;
     border-radius: 10px;
-    background-color: #f7cad5;
+    background-color: #726cf8;
+background-image: linear-gradient(315deg, #726cf8 0%, #e975a8 74%);
 }
 .terms{
     padding: .5rem;
@@ -127,7 +136,9 @@ form{
 }
 .panel-body{
     border: 1px solid #fa6f92;
-    background-color: #f7cad5;
+    background-color: #726cf8;
+    background-image: linear-gradient(315deg, #726cf8 0%, #e975a8 74%);
+    
     border-radius: 10px;
     margin-right: 3rem;
     padding: 2rem;
@@ -214,3 +225,29 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+.back{
+    background-image: url(../images/asthe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.vidd{
+    margin:1rem;
+   justify-items: center;
+    border-style:outset;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    box-shadow: 7px 7px 5px grey;
+   
+    
+}
+.viddo {
+ 
+    position: relative;
+    text-align: center;
+    
+}
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
