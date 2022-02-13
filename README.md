@@ -30,9 +30,11 @@ A Website for providing identity to all those unprivileged women who have the ta
    - [x] "mongoose": "^5.12.12",
    - [x] "passport": "^0.4.1",
    - [x] "passport-local": "^1.0.0",
-   - [x]"passport-local-mongoose": "^6.1.0"
+   - [x] "passport-local-mongoose": "^6.1.0"
   },
-  "devDependencies": {
+  
+ **"devDependencies": {**
+  
     - [x] "nodemon": "^2.0.15"
   }
   
