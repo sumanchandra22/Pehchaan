@@ -37,12 +37,13 @@ A Website for providing identity to all those unprivileged women who have the ta
   }
   
  **Tech Stacks used - **
-   - [ ] Node.js
-   - [ ] EJS
-   - [ ] MongoDB
-   - [ ] CSS
-   - [ ] Bootstrap
-   - [ ] JavaScript
+ 
+   - [x] Node.js
+   - [x] EJS
+   - [x] MongoDB
+   - [x] CSS
+   - [x] Bootstrap
+   - [x] JavaScript
   
   **FLOW CHART**
 ![](static/images/flow.jpg)
