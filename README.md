@@ -19,7 +19,6 @@ A Website for providing identity to all those unprivileged women who have the ta
 **To be a part of us -**
 ![](static/images/topart.jpg)
 
-![GitHub Light](static/images/topart.jpg#gh-dark-mode-only)
 
 **Dependencies used in the project -**
 
@@ -34,8 +33,8 @@ A Website for providing identity to all those unprivileged women who have the ta
    - [x] "passport-local-mongoose": "^6.1.0"
   },
   
- **"devDependencies": {**
-     "nodemon": "^2.0.15"
+ "devDependencies": {
+   - [x] "nodemon": "^2.0.15"
   }
   
  ***Tech Stacks used -***
