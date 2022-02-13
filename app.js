@@ -1,13 +1,13 @@
 const express = require("express");
 const app = express();
-const bodyParser = require("body-parser"); //*
+const bodyParser = require("body-parser"); 
 const ejs = require("ejs");
-const mongoose = require('mongoose'); //*
-mongoose.Promise = global.Promise; //*
+const mongoose = require('mongoose'); 
+mongoose.Promise = global.Promise; 
  
-const session = require("express-session");//*
-const passport = require("passport");//*
-const passportLocalMongoose = require("passport-local-mongoose");//*
+const session = require("express-session");
+const passport = require("passport");
+const passportLocalMongoose = require("passport-local-mongoose");
 
 
 const data = require(__dirname + "/items.js");
@@ -16,20 +16,20 @@ const ladyData = require(__dirname + "/diff_ladies.js");
 
 app.set("view engine","ejs");
 
-app.use(bodyParser.urlencoded({extended: true}));//*
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("static"));
 
 app.use(session({
     secret : "Our little secret.",
     resave: false,
     saveUninitialized: false
-}));//*
+}));
 
-app.use(passport.initialize());//*
-app.use(passport.session());//*
+app.use(passport.initialize());
+app.use(passport.session());
 
 mongoose.connect('mongodb+srv://anupri:anupri02@cluster0.l6txv.mongodb.net/test', {useNewUrlParser: true, useUnifiedTopology: true});
-mongoose.set("useCreateIndex",true);//*
+mongoose.set("useCreateIndex",true);
 
 const userSchema = new mongoose.Schema({
     name: String,
@@ -39,21 +39,16 @@ const userSchema = new mongoose.Schema({
 
 userSchema.plugin(passportLocalMongoose);
 
-const User = mongoose.model("User", userSchema);//*
+const User = mongoose.model("User", userSchema);
 
-passport.use(User.createStrategy());//*
+passport.use(User.createStrategy());
 
-passport.serializeUser(User.serializeUser());//*
-passport.deserializeUser(User.deserializeUser());//*
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
 
 let items = data.getProducts();
 let ladiesArr = ladyData.getLady();
-
-
-
-
-
 
 
 app.get("/", function(req,res){
@@ -89,8 +84,6 @@ app.get("/product", function(req,res){
     }
 })
 
-// =====================>=====================>========================>>>>>>>>>>>>>>>>>>>
-
 app.get("/helpus", function(req,res){
         res.render("donate", {itemData: items, login:"hidden", logout:" "}); 
 })
@@ -109,22 +102,6 @@ app.get("/profile", function(req,res){
     }
 })
 
-
-// =====================>.>>>>>>>>>>>>>>==========================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-app.post("/donatesu" , function(req,res){
-    res.redirect("donatesum");
-});
-app.post("/helpus" , function(req,res){
-    res.redirect("donate");
-});
-
-app.post("/donateus" , function(req,res){
-    res.render("thankfdon");
-});
-
-app.post("/bepart" , function(req , res){
-    res.render("beapart");
-})
 app.get("/Superwomen", function(req,res){
     if(req.isAuthenticated()){
         res.render("Ladies", {ladyItems : ladiesArr, login:"hidden", logout:" "});
@@ -147,6 +124,26 @@ app.get("/:ladyName", function(req, res){
 })
  
  
+
+
+// =====================>.>>>>>>>>>>>>>>==========================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+app.post("/donatesu" , function(req,res){
+    res.redirect("donatesum");
+});
+app.post("/helpus" , function(req,res){
+    res.redirect("donate");
+});
+
+app.post("/donateus" , function(req,res){
+    res.render("thankfdon");
+});
+
+app.post("/bepart" , function(req , res){
+    res.render("beapart");
+})
+
+
+
 
 app.post("/payment" , function(req,res){
     const name = req.body.productId;
