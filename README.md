@@ -5,6 +5,11 @@ Video link - https://youtu.be/4VlfbPfWkpQ
 
 Presentation link - https://docs.google.com/presentation/d/190YLR9iLPuaf-0NeyheYijb9hmGvTtwD/edit?usp=sharing&ouid=100280527250510962211&rtpof=true&sd=true 
 
+Home Page -
+![](static/images/home.jpg)
+
+Product Page -
+![](static/images/product.jpg)
 
 Dependencies used in the project -
 
