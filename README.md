@@ -3,7 +3,7 @@ A Website for providing identity to all those unprivileged women who have the ta
 
 Video link - https://youtu.be/4VlfbPfWkpQ
 
-Presentation link - 
+Presentation link - https://docs.google.com/presentation/d/190YLR9iLPuaf-0NeyheYijb9hmGvTtwD/edit?usp=sharing&ouid=100280527250510962211&rtpof=true&sd=true 
 
 
 Dependencies used in the project -
