@@ -140,9 +140,11 @@ app.post("/donateus" , function(req,res){
 
 app.post("/bepart" , function(req , res){
     res.render("beapart");
-})
+});
 
-
+app.post("/paycard" , function(req , res){
+    res.render("thanku");
+});
 
 
 app.post("/payment" , function(req,res){
