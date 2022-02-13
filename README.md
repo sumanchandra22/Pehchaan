@@ -27,6 +27,6 @@ Dependencies used in the project -
   To run the project -
   
     step1 - run npm i
-    step2 - npm start
+    step2 - run npm start
     
     
