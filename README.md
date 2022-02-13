@@ -5,6 +5,9 @@ A Website for providing identity to all those unprivileged women who have the ta
 
 **Presentation link -** https://docs.google.com/presentation/d/190YLR9iLPuaf-0NeyheYijb9hmGvTtwD/edit?usp=sharing&ouid=100280527250510962211&rtpof=true&sd=true 
 
+**FLOW CHART**
+![](static/images/flow.jpg)
+
 **Home Page -**
 ![](static/images/home.jpg)
 
@@ -35,11 +38,19 @@ A Website for providing identity to all those unprivileged women who have the ta
     "nodemon": "^2.0.15"
   }
   
+ **Tech Stacks used - **
+ 
+   -Node.js
+   -EJS
+   -MongoDB
+   -CSS
+   -Bootstrap
+   -JavaScript
   
   
  **To run the project -**
   
-    step1 - run npm i
-    step2 - run npm start
+    -step1 - run npm i
+    -step2 - run npm start
     
     
