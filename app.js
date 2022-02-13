@@ -1,13 +1,13 @@
 const express = require("express");
 const app = express();
-const bodyParser = require("body-parser"); 
+const bodyParser = require("body-parser"); //*
 const ejs = require("ejs");
-const mongoose = require('mongoose'); 
-mongoose.Promise = global.Promise;
+const mongoose = require('mongoose'); //*
+mongoose.Promise = global.Promise; //*
  
-const session = require("express-session");
-const passport = require("passport");
-const passportLocalMongoose = require("passport-local-mongoose");
+const session = require("express-session");//*
+const passport = require("passport");//*
+const passportLocalMongoose = require("passport-local-mongoose");//*
 
 
 const data = require(__dirname + "/items.js");
@@ -16,7 +16,7 @@ const ladyData = require(__dirname + "/diff_ladies.js");
 
 app.set("view engine","ejs");
 
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: true}));//*
 app.use(express.static("static"));
 
 app.use(session({
@@ -25,47 +25,35 @@ app.use(session({
     saveUninitialized: false
 }));//*
 
-app.use(passport.initialize());
-app.use(passport.session());
+app.use(passport.initialize());//*
+app.use(passport.session());//*
 
 mongoose.connect('mongodb+srv://anupri:anupri02@cluster0.l6txv.mongodb.net/test', {useNewUrlParser: true, useUnifiedTopology: true});
-mongoose.set("useCreateIndex",true);
+mongoose.set("useCreateIndex",true);//*
 
 const userSchema = new mongoose.Schema({
     name: String,
-    // email: String,
     password: String
-});//*
+});
 
 
 userSchema.plugin(passportLocalMongoose);
 
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model("User", userSchema);//*
 
-passport.use(User.createStrategy());
+passport.use(User.createStrategy());//*
 
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
+passport.serializeUser(User.serializeUser());//*
+passport.deserializeUser(User.deserializeUser());//*
 
 
 let items = data.getProducts();
 let ladiesArr = ladyData.getLady();
 
-// items.forEach(function(item){
-//     const item1 = new product(item);
 
-// });
 
-const productSchema = new mongoose.Schema({
-    item_id: Number,
-    image : String,
-    name :  String,
-    lady : String,
-    Price :String,
-    Rating : Number
-  });
 
-var product = mongoose.model('product', productSchema);
+
 
 
 app.get("/", function(req,res){
@@ -165,53 +153,50 @@ app.post("/payment" , function(req,res){
     const seller = req.body.lady;
     const price = req.body.price;
     const image1 = req.body.image1;
-
-
     if(req.isAuthenticated()){
-           res.render("payment" , {itemData : name, itemData1 : seller, itemData2 : price, itemData3 : image1, login:"hidden", logout:" "}); 
-    }else{
-        res.render("payment" ,  {itemData : name,itemData1 : seller,itemData2 : price,itemData3 : image1, login:"hidden", logout:" "}); 
-    }
+        res.render("payment" , {itemData : name, itemData1 : seller, itemData2 : price, itemData3 : image1, login:"hidden", logout:" "}); 
+ }else{
+     res.render("login" ,  {itemData : name,itemData1 : seller,itemData2 : price,itemData3 : image1, login:"hidden", logout:" "}); 
+ }
 });
 
 
 app.post("/register", function (req, res) {
-    User.register({username: req.body.username}, req.body.password, function(err, user){
-        if(err){
-            console.log(err);
-            res.redirect("/userregister");
-        } else {
-            passport.authenticate("local")(req, res, function(){
-                res.redirect("/");
-            });
-        }
-    })
+ User.register({username: req.body.username}, req.body.password, function(err, user){
+     if(err){
+         console.log(err);
+         res.redirect("/userregister");
+     } else {
+         passport.authenticate("local")(req, res, function(){
+             res.redirect("/");
+         });
+     }
+ })
 });
 
 
 app.post("/login", function (req, res) {
-    const user = new User({
-        username: req.body.username,
-        // useremail: req.body.useremail,
-        password: req.body.password
-    })
+ const user = new User({
+     username: req.body.username,
+     password: req.body.password
+ })
 
-    req.login(user, function(err){
-        if(err){
-            res.redirect("/register");
-            console.log(err);
-        } else {
-            passport.authenticate("local")(req, res, function(){
-                res.redirect("/");
-            });
-        }
-    })
+ req.login(user, function(err){
+     if(err){
+         res.redirect("/register");
+         console.log(err);
+     } else {
+         passport.authenticate("local")(req, res, function(){
+             res.redirect("/");
+         });
+     }
+ })
 })
 
 app.post("/thanku" , function(req , res){
-    res.redirect("/thanku");
+ res.redirect("/thanku");
 })
- 
+
 app.listen(3000, function(){
-    console.log("Server started on port 3000");
+ console.log("Server started on port 3000");
 });
