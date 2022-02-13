@@ -5,8 +5,6 @@ A Website for providing identity to all those unprivileged women who have the ta
 
 **Presentation link -** https://docs.google.com/presentation/d/190YLR9iLPuaf-0NeyheYijb9hmGvTtwD/edit?usp=sharing&ouid=100280527250510962211&rtpof=true&sd=true 
 
-**FLOW CHART**
-![](static/images/flow.jpg)
 
 **Home Page -**
 ![](static/images/home.jpg)
@@ -39,7 +37,6 @@ A Website for providing identity to all those unprivileged women who have the ta
   }
   
  **Tech Stacks used - **
- 
    -Node.js
    -EJS
    -MongoDB
@@ -47,9 +44,10 @@ A Website for providing identity to all those unprivileged women who have the ta
    -Bootstrap
    -JavaScript
   
-  
+  **FLOW CHART**
+![](static/images/flow.jpg)
+
  **To run the project -**
-  
     -step1 - run npm i
     -step2 - run npm start
     
