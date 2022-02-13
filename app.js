@@ -125,7 +125,7 @@ app.post("/donateus" , function(req,res){
 app.post("/bepart" , function(req , res){
     res.render("beapart");
 })
-app.get("/Ladies", function(req,res){
+app.get("/Superwomen", function(req,res){
     if(req.isAuthenticated()){
         res.render("Ladies", {ladyItems : ladiesArr, login:"hidden", logout:" "});
     }else{
