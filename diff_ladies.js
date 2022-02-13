@@ -37,7 +37,7 @@ exports.getLady = function() {
         },
 
         {
-            lady_id:2,
+            lady_id:3,
             image : "images/dariya",
             name : "Dariya Bhat", 
             heading:"I am a Handicraft Worker From Jaipur, Rajashthan and my speciality is Porcelain Art and Craft and I make flower vase , baskets, holders and variety of other products and customise it to make better.",
@@ -72,7 +72,7 @@ exports.getLady = function() {
         },
     
         {
-            lady_id:2,
+            lady_id:5,
             image : "images/lady7.png",
             name : "Nidhi Khanna", 
             heading:"I am from Ujjain, Madhya Pradesh and I like do craft work. Craft of any kind",
@@ -90,7 +90,7 @@ exports.getLady = function() {
         },
 
         {
-            lady_id:2,
+            lady_id:6,
             image : "images/lady4.png",
             name : "Ruchi Aggarwal", 
             heading:"I am a CraftsPerson from Maharashtra, India and my speciality is Woollen Craft and Embroidery. I make wall hangings,  pullovers and many more items.",
@@ -108,7 +108,7 @@ exports.getLady = function() {
         },
 
         {
-            lady_id:2,
+            lady_id:7,
             image : "images/lady1.png",
             name : "Bindu Anand", 
             heading:"I am a Handicraft worker from Uttar Pradesh, India and my area is Wooden Craft and Clay Work. I make wooden candle stand, dolls and clay stands too.",
@@ -126,7 +126,7 @@ exports.getLady = function() {
         },
 
         {
-            lady_id:2,
+            lady_id:8,
             image : "images/lady5.png",
             name : "Seema Kumari", 
             heading:"My home is near Banaras. I make small wooden figurines and things out of wool.",
@@ -145,7 +145,7 @@ exports.getLady = function() {
         
 
         {
-            lady_id:2,
+            lady_id:9,
             image : "images/lady6.png",
             name : "Sona Rani", 
             heading:"I am from small area near Jaipur, Rajasthan. I love making clay pots and stitching to creat various crafts.",
@@ -163,7 +163,7 @@ exports.getLady = function() {
         },
 
         {
-            lady_id:2,
+            lady_id:10,
             image : "images/lady10",
             name : "Sunita Kumari", 
             heading:"I am a Ceramicist and CraftsPerson from Rajasthan, India. I make crockery and bamboo items along with cloth printing and Jute work.",
