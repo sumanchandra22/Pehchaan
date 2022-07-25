@@ -74,7 +74,7 @@ exports.getLady = function() {
         {
             lady_id:5,
             image : "images/lady7.png",
-            name : "Nidhi Khanna", 
+            name : "Nidhi Kumari", 
             heading:"I am from Ujjain, Madhya Pradesh and I like do craft work. Craft of any kind",
             para1: "Batik Print is popular craft existent in Ujjain and many bed sheets, sarees, wall panels, portraits, dress materials, etc. contain the rich batik prints. At my age i want to inspire other women who want to work and earn by utilizing their talent ",
             para2:"Support of our customers have encouraged us to work on this mission to make Pehchaan an identity for all those ladies who have talents but havent got the platform to showcase it.It will be our heartiest request to share this website so that we can reach all women over india.",
@@ -110,7 +110,7 @@ exports.getLady = function() {
         {
             lady_id:7,
             image : "images/lady1.png",
-            name : "Bindu Anand", 
+            name : "Jyoti Anand", 
             heading:"I am a Handicraft worker from Uttar Pradesh, India and my area is Wooden Craft and Clay Work. I make wooden candle stand, dolls and clay stands too.",
             para1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium fuga reprehenderit, quidem blanditiis labore rem? Praesentium corporis, numquam ipsa, laboriosam, dolor minus illo ea et unde eius assumenda culpa! Placeat voluptas rerum id magnam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatibus?",
             para2:"Support of our customers have encouraged us to work on this mission to make Pehchaan an identity for all those ladies who have talents but havent got the platform to showcase it.It will be our heartiest request to share this website so that we can reach all women over india.",
